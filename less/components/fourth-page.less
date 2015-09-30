@@ -1,49 +1,102 @@
+.fourth-page {
+	position: relative;
+	background: @bg-color;
+	padding: 1px;
 
-
-.header {
-	background: #4eacdd;
 
 	&__inner {
-		width: 960px;
-		margin: 0 auto;
+		.inner_container();
+		text-align: center;
+		
+
 	}
 
-	&__top-menu {
-	width: 100%;
+	&__center {
+		margin: 240px auto;
+
 	}
 
-	&__logo-wrap {
-	float: left;
+	&____social-icons {
+		position: relative;
+	}
+
+	&__form {
+		position: relative;
+		margin: 40px 0 0px 0px;
+		
+
 	}
 
 
-	&__burger-btn {
-	float: right;
-	width: 30px;
-	height: 30px;
+	&__field--name {
+			color: @heading-color;
+			font-weight: 500;
+			
+
+
+	}
+
+	&__field {
+	margin-left: 20px;
+	font-style: italic;
+	color: #d3d3d3;
+	font-weight: bold;
+	box-shadow: none;
+	border: none; 
+	padding: 10px;
+	border-radius: 10px;
+	font-family: @main-font-family;
+	font-size: 14px;
+	padding-right: 50px;
+	padding-left: 10px;
+	
 	
 	}
 
-	&__title {
-	font-size: @font-size-h1;
-	}
+	&__form-btn {
+		position: absolute;
+		border: none;
+		outline: none;
+		left: 610px;
+		top: 12px;
+		width: 30px;
+		height: 14px;
+		cursor: pointer;
+		border-left: 1px solid #d3d3d3;
 
-	&__slogan {
-	font-size: @font-size-slogan;
-	}
+		background: url(../../images/mail-icon.png) no-repeat 10px 0px;
+		
 
-	&__descriptions{
-		text-align: right;
-	}
-
-	&__nav-menu {
-		display: none;
 	}
 
 }
 
-.icon-align-justify {
-	font-size: 30px;
-	cursor: pointer;
+
+.social-item + .social-item {
+	margin-left: 30px;
 }
 
+
+.social-item {
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background: url(../../images/social-icon-set.png) no-repeat 0 0;
+
+	&-fb {
+		background-position: -90px 0px;
+	}
+
+	&-tw {
+		background-position: -180px 0px;
+	}
+
+	&-mail {
+		background-position: -270px 0px;
+	}
+}
+
+
+.social-item + .social-item {
+	margin-left: 30px;
+}

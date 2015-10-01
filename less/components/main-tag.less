@@ -16,6 +16,19 @@ body {
 .inner_container() {
 	width: 960px;
 	margin: 0 auto;
+
+}
+
+
+a {
+	text-decoration: none;
+	font-family: @main-font-family;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 
@@ -30,6 +43,10 @@ body {
 	background: url(../../images/download-icon.png) no-repeat 85% 20px;
 	cursor: pointer;
 
+	&:hover {
+		text-decoration: underline;
+	}
+
 
 }
 
@@ -42,3 +59,7 @@ body {
 	border-radius: 5px;
 }
 
+
+.site-logo {
+	cursor: pointer;
+}
